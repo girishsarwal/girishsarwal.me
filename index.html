@@ -1,0 +1,63 @@
+<html>
+<head>
+<link href='https://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
+<link href='jquery.terminal.css' rel='stylesheet' type='text/css'>
+<script src="jquery-1.11.3.min.js" language="javascript" type="text/javascript"></script>
+<script src="jquery.terminal.0.8.8.js" language="javascript" type="text/javascript"></script>
+
+<script>
+jQuery(function($, undefined) {
+    $('#term_demo').terminal(function(command, term) {
+        if(command==='whoami'){
+        	term.echo('I am Girish Sarwal!');
+        	term.echo('');
+
+        }
+    }, {
+        	greetings: 'Type your command to navigate',
+        	name: 'js_demo',
+        	prompt: 'girishsarwal.me> ',
+        	width: '100%'
+    });
+});
+</script> 
+<style>
+body {font-family: 'Ubuntu Mono';background: #000;color:#fff;}
+</style>
+</head>
+<body>
+        <div>
+        <center>
+        <div style="font-size:72px;">girish sarwal</div>
+        <div style="font-size:30px;">[ Nov 16, 1980 - now() ]</div>
+        </center>
+        </div>
+        <br/><br/>
+        <div style="width:100%">
+        <table style="width:100%;">
+        <tr>
+        <td style="width:70%;" valign="top">
+        <div id="term_demo" style="width:50%;">
+        </div>
+        </td>
+        <td style="width:30%;text-align:right;">
+        	<u>available commands</u>
+        	<ul style="list-style-type:none;">
+        		<li>whoami</li>
+        		<li>whatido</li>
+        		<li>mylife</li>
+        		<li>mywork</li>
+        		<li>seeme</li>
+        		<li>skypeme</li>
+        		<li>callme</li>
+        		<li>hangaround</li>
+        		<li>clear</li>
+        		<li>exit</li>
+        	</ul>
+        </td>
+        </tr>
+        </table>
+        </div>
+
+</body>
+</html>
