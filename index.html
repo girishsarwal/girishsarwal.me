@@ -4,12 +4,16 @@
 <link href='jquery.terminal.css' rel='stylesheet' type='text/css'>
 <script src="jquery-1.11.3.min.js" language="javascript" type="text/javascript"></script>
 <script src="jquery.terminal.0.8.8.js" language="javascript" type="text/javascript"></script>
+<script src="selfie.js" language="javascript" type="text/javascript"></script>
 
 <script>
 jQuery(function($, undefined) {
     $('#term_demo').terminal(function(command, term) {
         if(command==='whoami'){
-        	term.echo('I am Girish Sarwal! Welcome to my lair!');
+        	term.echo('I am Girish Sarwal!\n');
+            term.echo(selfie, {
+                raw:true
+            });
 
         } else if(command === 'whatido'){
             term.echo('');
@@ -53,7 +57,9 @@ jQuery(function($, undefined) {
             term.echo('Microsoft Windows 7/8, Microsoft Windows Vista, Microsoft Windows 2K/XP, Microsoft Windows 9X/ME, Linux Ubuntu Trusty onwards, Raspbian, Google Android');
             term.echo('');
             term.echo('Programming Languages and SDKs');
-            term.echo('WPF, WCF, .NET 2.0 languages (VB.NET, VC, C#, ASP.NET), Microsoft Silverlight, PHP (L/WAMP), Classic ASP, VC++ 6.0 (Win32 SDK), C++, C, Visual Basic 6.0, Java (J2SE, JSP, Servlets), Javascript, Python, C/SIDE, Intel x86 ASM, ABAP/4, XML, YAML');
+            term.echo('WPF, WCF, .NET 2.0 languages (VB.NET, VC, C#, ASP.NET), Microsoft Silverlight, PHP (L/WAMP), Classic ASP, VC++ 6.0 (Win32 SDK), C++, C, Visual Basic 6.0, Java (J2SE, JSP, Servlets), Javascript, Python, C/SIDE, Intel x86 ASM, ABAP/4, XML, YAML', {
+                    'keepWords': true
+            });
             term.echo('');
             term.echo('Game Engines and Technologies');
             term.echo('CryENGINE, Amazon Lumberyard, Unity 3D,  MS DirectX 9.0c, OpenGL (GLUT32, freeglut, GLFW GLEW), Unity, CryTEK, UDK, ShaderLab, GLSL, WebGL, Three.js, Phaser.io, Occulus Rift SDK DK1 and DK2, Samsung GEAR');
