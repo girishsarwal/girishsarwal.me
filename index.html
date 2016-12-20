@@ -3,7 +3,7 @@
 <link href='https://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
 <link href='jquery.terminal.css' rel='stylesheet' type='text/css'>
 <script src="jquery-1.11.3.min.js" language="javascript" type="text/javascript"></script>
-<script src="jquery.terminal.0.8.8.js" language="javascript" type="text/javascript"></script>
+<script src="jquery.terminal-0.11.23.min.js" language="javascript" type="text/javascript"></script>
 <script src="selfie.js" language="javascript" type="text/javascript"></script>
 
 <script>
@@ -12,97 +12,196 @@ jQuery(function($, undefined) {
         if(command==='whoami'){
         	term.echo('I am Girish Sarwal!\n');
             term.echo(selfie, {
-                raw:true
+                raw: true
             });
 
         } else if(command === 'whatido'){
-            term.echo('');
-            term.echo('ABOUT ME');
+            term.echo('\n\n');
+            term.echo('[[b;#0f0;#000]ABOUT ME]');
             term.echo('--------');
-            term.echo('');
-            term.echo('I have over 13 years of experience in game design & development, application and mobile development. I have worked in the healthcare, sports and automation domains. Over the past years I’ve designed and delivered products ranging from Realtime solutions for Healthcare and Sports verticals, Lighting control systems, Service support systems, Web based games and a number of toolkits and frameworks.');
-            term.echo('');
-            term.echo('I possess a BTech graduate degree in Comupter Sciences and a Post Graduate in Masters of Business Administration.');
-            term.echo('');
-            term.echo('I’ve been an electronics hobbyist and have good knowledge of hardware interaction.');
-            term.echo('');
-            term.echo('My involvement in software KPAs extends from software development life cycles, verification, quality assurance, configuration and resource management, change management, statistical data analysis and causal analysis.  I find myself comfortable interacting with clients.');
-            term.echo('');
-            term.echo('Besides my professional life, I enjoy designing microcontroller and electronic circuits, design and model rc planes, write little games, play the drums and train bright new minds in the field of graphics and animation.');
+            term.echo('\n\n');
+            term.echo('I have over 13 years of experience in game design & development, application and mobile development. I have worked in the healthcare, sports and automation domains. Over the past years I’ve designed and delivered products ranging from Realtime solutions for Healthcare and Sports verticals, Lighting control systems, Service support systems, Web based games and a number of toolkits and frameworks.', {
+                'keepWords': true
+            });
+            term.echo('\n\n');
+            term.echo('I possess a BTech graduate degree in Comupter Sciences and a Post Graduate in Masters of Business Administration.', {
+                'keepWords': true
+            });
+            term.echo('\n\n');
+            term.echo('I’ve been an electronics hobbyist and have good knowledge of hardware interaction.', {
+                'keepWords': true
+            });
+            term.echo('\n\n');
+            term.echo('My involvement in software KPAs extends from software development life cycles, verification, quality assurance, configuration and resource management, change management, statistical data analysis and causal analysis.  I find myself comfortable interacting with clients.', {
+                'keepWords': true
+            });
+            term.echo('\n\n');
+            term.echo('Besides my professional life, I enjoy designing microcontroller and electronic circuits, design and model rc planes, write little games, play the drums and train bright new minds in the field of graphics and animation.', {
+                'keepWords': true
+            });
+
+            term.echo('\n\n');
 
         } else if(command === 'workido') {
+            term.echo('\n\n');
             term.echo('');
-            term.echo('FUNCTIONAL EXPERTISE');
+            term.echo('[[b;#0f0;#000]FUNCTIONAL EXPERTISE]');
             term.echo('--------------------');
-            term.echo('');
-            term.echo('Automation and Robotics');
-            term.echo('Basis of Processor based lighting control systems. Development of products used for controlling Lighting hardware products. Signal analysis and function generation. Microcontroller and FPGA programming.');
-            term.echo('');
-            term.echo('Gaming Graphics and Artificial Intelligence(Healthcare + Sports)');
-            term.echo('Fundamentals and architecture of 3-D systems, Developing and selling products and services targeted towards medical research. Realtime gaming systems including AI for autonomous agents, FSM, Planning Systems and Decision trees. Creation and usage of component systems in games. DLC packaging.');
-            term.echo('');
-            term.echo('Organizational Infrastructure');
-            term.echo('Developing and Leveraging Information Technology backbones, Configuring business networks and communications. Implemented SOA based framework for data transfer and statistical analysis. Good experience of DevOps using Cloud; Software Licensing.');
-            term.echo('');
-            term.echo('Process and Quality Management');
-            term.echo('Well versed with CMM KPAs, AGILE and XGP. Developed ISO level III processes and work instructions for repetitive tasks. Implemented 360 degree workflows and have drawn up SOPs for quality enhancement');
-            term.echo('');
+            term.echo('\n\n');
+            term.echo('[[b;#fff;#000]Automation and Robotics]');
+            term.echo('\n\n');
+            term.echo('Basis of Processor based lighting control systems. Development of products used for controlling Lighting hardware products. Signal analysis and function generation. Microcontroller and FPGA programming.', {
+                'keepWords': true
+            });
+            term.echo('\n\n');
+            term.echo('[[b;#fff;#000]Gaming Graphics and Artificial Intelligence(Healthcare + Sports)]');
+            term.echo('\n\n');
+            term.echo('Fundamentals and architecture of 3-D systems, Developing and selling products and services targeted towards medical research. Realtime gaming systems including AI for autonomous agents, FSM, Planning Systems and Decision trees. Creation and usage of component systems in games. DLC packaging.', {
+                'keepWords': true
+            });
+            term.echo('\n\n');
+            term.echo('[[b;#fff;#000]Organizational Infrastructure]');
+            term.echo('\n\n');
+            term.echo('Developing and Leveraging Information Technology backbones, Configuring business networks and communications. Implemented SOA based framework for data transfer and statistical analysis. Good experience of DevOps using Cloud; Software Licensing.', {
+                'keepWords': true
+            });
+            term.echo('\n\n');
+            term.echo('[[b;#fff;#000]Process and Quality Management]');
+            term.echo('\n\n');
+            term.echo('Well versed with CMM KPAs, AGILE and XGP. Developed ISO level III processes and work instructions for repetitive tasks. Implemented 360 degree workflows and have drawn up SOPs for quality enhancement', {
+                'keepWords': true
+            });
+            term.echo('\n\n');
 
         } else if(command === 'techexp') {
-            term.echo('');
-            term.echo('TECHNICAL EXPERTISE');
+            term.echo('\n\n');
+            term.echo('[[b;#f00;#000]TECHNICAL EXPERTISE]');
             term.echo('-------------------');
-            term.echo('');
-            term.echo('Operating Systems');
-            term.echo('Microsoft Windows 7/8, Microsoft Windows Vista, Microsoft Windows 2K/XP, Microsoft Windows 9X/ME, Linux Ubuntu Trusty onwards, Raspbian, Google Android');
-            term.echo('');
-            term.echo('Programming Languages and SDKs');
-            term.echo('WPF, WCF, .NET 2.0 languages (VB.NET, VC, C#, ASP.NET), Microsoft Silverlight, PHP (L/WAMP), Classic ASP, VC++ 6.0 (Win32 SDK), C++, C, Visual Basic 6.0, Java (J2SE, JSP, Servlets), Javascript, Python, C/SIDE, Intel x86 ASM, ABAP/4, XML, YAML', {
-                    'keepWords': true
+            term.echo('\n\n');
+            term.echo('[[b;#fff;#000]Operating Systems]');
+            term.echo('\n\n');
+            term.echo('Microsoft Windows 7/8, Microsoft Windows Vista, Microsoft Windows 2K/XP, Microsoft Windows 9X/ME, Linux Ubuntu Trusty onwards, Raspbian, Google Android', {
+                'keepWords': true
             });
-            term.echo('');
-            term.echo('Game Engines and Technologies');
-            term.echo('CryENGINE, Amazon Lumberyard, Unity 3D,  MS DirectX 9.0c, OpenGL (GLUT32, freeglut, GLFW GLEW), Unity, CryTEK, UDK, ShaderLab, GLSL, WebGL, Three.js, Phaser.io, Occulus Rift SDK DK1 and DK2, Samsung GEAR');
-            term.echo('');
-            term.echo('Embedded Systems');
-            term.echo('PIC 16F84, Raspberry Pi, ATMEL AVR, Z-80, GBZ- 80, INTEL 8086, Arduino, Particle Photon, CASIO SDK for PV, .NET Compact Framework (ARM/SH3)');
-            term.echo('');
-            term.echo('App + Mobile Development and Databasing');
-            term.echo('HTML, DHTML, XML, YAML, MySQL, MS Access, NoSQL Mongo, Microsoft SQL Server, Ionic Cordova, Navision Attain Database, ERWin');
-            term.echo('');
-            term.echo('Content Development');
-            term.echo('3D Studio Max, Adobe Photoshop, Flash MX + AS3, Flash Developer, Microsoft FrontPage');
-            term.echo('');
-            term.echo('Virtualization, Cloud and DevOps');
-            term.echo('Cygwin, Mingw, Oracle Virtual Box, Vagrant, Docker, Terraform, Ansible Platform.sh, AWS (EC2, ECS, S3, CloudFront, CloudWatch, Lambda), Google Android Play store, Apple AppStore, SVN, GIT, BitBucket, GitHub, Bitbucket Pipelines.');
-            term.echo('');
-            term.echo('ERP');
-            term.echo('SAP R/3 4.7e - ABAP, MBS Navision Attain 3.60, Damgaard Axapta 4.0 (Now Microsoft Navision)');
-            term.echo('');
-            term.echo('Technologies/Software Packages');
-            term.echo('.NET Remoting, COM, ActiveX, MS Office, Visio, Project, UML Modelling, AJAX, SAS 8.2');
-            term.echo('');
-            term.echo('Logical Analysis, Reasoning and Mathematics');
-            term.echo('Well versed with 3D Vector, Matrix, Quaternion geometry, Trigonometry, Laws of physics, Set theory, Finite State Automata Data Structures, Algorithm design, Differential and integral calculus.');
-            term.echo('');
-            term.echo('');
+
+            term.echo('\n\n');
+            term.echo('[[b;#fff;#000]Programming Languages and SDKs]');
+            term.echo('\n\n');
+            term.echo('WPF, WCF, .NET 2.0 languages (VB.NET, VC, C#, ASP.NET), Microsoft Silverlight, PHP (L/WAMP), Classic ASP, VC++ 6.0 (Win32 SDK), C++, C, Visual Basic 6.0, Java (J2SE, JSP, Servlets), Javascript, Python, C/SIDE, Intel x86 ASM, ABAP/4, XML, YAML', {
+                'keepWords': true
+            });
+
+            term.echo('\n\n');
+            term.echo('[[b;#fff;#000]Game Engines and Technologies]');
+            term.echo('\n\n');
+            term.echo('CryENGINE, Amazon Lumberyard, Unity 3D,  MS DirectX 9.0c, OpenGL (GLUT32, freeglut, GLFW GLEW), Unity, CryTEK, UDK, ShaderLab, GLSL, WebGL, Three.js, Phaser.io, Occulus Rift SDK DK1 and DK2, Samsung GEAR', {
+                'keepWords': true
+            });
+
+            term.echo('\n\n');
+            term.echo('[[b;#fff;#000]Embedded Systems]');
+            term.echo('\n\n');
+            term.echo('PIC 16F84, Raspberry Pi, ATMEL AVR, Z-80, GBZ- 80, INTEL 8086, Arduino, Particle Photon, CASIO SDK for PV, .NET Compact Framework (ARM/SH3)', {
+                'keepWords': true
+            });
+
+            term.echo('\n\n');
+            term.echo('[[b;#fff;#000]App + Mobile Development and Databasing]');
+            term.echo('\n\n');
+            term.echo('HTML, DHTML, XML, YAML, MySQL, MS Access, NoSQL Mongo, Microsoft SQL Server, Ionic Cordova, Navision Attain Database, ERWin', {
+                'keepWords': true
+            });            
+
+            term.echo('\n\n');
+            term.echo('[[b;#fff;#000]Content Development]');
+            term.echo('\n\n');
+            term.echo('3D Studio Max, Adobe Photoshop, Flash MX + AS3, Flash Developer, Microsoft FrontPage', {
+                'keepWords': true
+            });            
+
+            term.echo('\n\n');
+            term.echo('[[b;#fff;#000]Virtualization, Cloud and DevOps]');
+            term.echo('\n\n');
+            term.echo('Cygwin, Mingw, Oracle Virtual Box, Vagrant, Docker, Terraform, Ansible Platform.sh, AWS (EC2, ECS, S3, CloudFront, CloudWatch, Lambda), Google Android Play store, Apple AppStore, SVN, GIT, BitBucket, GitHub, Bitbucket Pipelines.', {
+                'keepWords': true
+            });            
+
+            term.echo('\n\n');
+            term.echo('[[b;#fff;#000]ERP]');
+            term.echo('\n\n');
+            term.echo('SAP R/3 4.7e - ABAP, MBS Navision Attain 3.60, Damgaard Axapta 4.0 (Now Microsoft Navision', {
+                'keepWords': true
+            });            
+
+            term.echo('\n\n');
+            term.echo('[[b;#fff;#000]Technologies/Software Packages]');
+            term.echo('\n\n');
+            term.echo('.NET Remoting, COM, ActiveX, MS Office, Visio, Project, UML Modelling, AJAX, SAS 8.2', {
+                'keepWords': true
+            });            
+
+            term.echo('\n\n');
+            term.echo('[[b;#fff;#000]Logical Analysis, Reasoning and Mathematics]');
+            term.echo('\n\n');
+            term.echo('Well versed with 3D Vector, Matrix, Quaternion geometry, Trigonometry, Laws of physics, Set theory, Finite State Automata Data Structures, Algorithm design, Differential and integral calculus.', {
+                'keepWords': true
+            });            
+            term.echo('\n\n');
+
+
         } else if(command === 'swag') {
-            term.echo('');
-            term.echo('THINGS I DO');
-            term.echo('-----------');
-            term.echo('');
-            term.echo('R/C Flying');
-            term.echo('Electronics and Microprocessors');
-            term.echo('Rock Drumming');
-            term.echo('Gaming');
+            term.echo('\n\n');
+            term.echo('[[b;#f00;#000]THINGS I DO]');
+            term.echo('-------------------');
+            term.echo('\n\n');
+            term.echo('[[b;#fff;#000]R/C Aeromodelling]');
+            term.echo('\n\n');
+            term.echo('', {
+                'keepWords': true
+            });
+
+            term.echo('\n\n');
+            term.echo('[[b;#fff;#000]Electronics and Microprocessors]');
+            term.echo('\n\n');
+            term.echo('', {
+                'keepWords': true
+            });
+
+            term.echo('\n\n');
+            term.echo('[[b;#fff;#000]Gaming]');
+            term.echo('\n\n');
+            term.echo('', {
+                'keepWords': true
+            });
+
+            term.echo('\n\n');
+            term.echo('[[b;#fff;#000]Rock Drumming]');
+            term.echo('\n\n');
+            term.echo('', {
+                'keepWords': true
+            });
         } else if(command === 'contactme') {
-            term.echo('');
-            term.echo('CONTACT ME');
-            term.echo('----------');
-            term.echo('');
-            term.echo('email - g.sarwal@gmail.com');
-            term.echo('skype - girishsarwal');
-            term.echo('github - https://github.com/girishsarwal');
+            term.echo('\n\n');
+            term.echo('[[b;#00f;#000]CONTACT ME]');
+            term.echo('-------------------');
+            term.echo('\n\n');
+            term.echo('[[b;#fff;#000]EMail] - g.sarwal@gmail.com');
+            term.echo('', {
+                'keepWords': true
+            });
+
+            term.echo('\n\n');
+            term.echo('[[b;#fff;#000]Skype] - girishsarwal');
+            term.echo('', {
+                'keepWords': true
+            });
+
+            term.echo('\n\n');
+            term.echo('[[b;#fff;#000]Twitter] - @girishsarwal');
+            term.echo('', {
+                'keepWords': true
+            });
+            term.echo('\n\n');
         }
     }, {
         	greetings: 'Type your command to navigate',
