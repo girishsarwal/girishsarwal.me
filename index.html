@@ -202,6 +202,15 @@ jQuery(function($, undefined) {
                 'keepWords': true
             });
             term.echo('\n\n');
+        } else if(command === 'download') {
+            term.echo('\n\n');
+            term.echo('***** Before you print *****');
+            term.echo('[[b;#fff;#000]3-6 billion trees are cut every year for paper]');
+            term.echo('[[b;#0f0;#000]SAVE PAPER, SAVE TREES]');
+            term.echo('\n\n');
+            setTimeout(function(){
+                document.getElementById('download').click();
+            }, 3000);
         }
     }, {
         	greetings: 'Type your command to navigate',
@@ -246,11 +255,12 @@ body {font-family: 'Ubuntu Mono';background: #000;color:#fff;}
         		<li>techexp</li>
         		<li>swag</li>
                 <li>contactme</li>
-        	</ul>
+                <li>download</li>
+            </ul>
         </td>
         </tr>
         </table>
         </div>
-
+        <a id="download" href="https://s3-us-west-2.amazonaws.com/girishsarwal.me/files/resume-girish-sarwal.pdf" hidden></a>
 </body>
 </html>
